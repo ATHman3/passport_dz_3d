@@ -9,7 +9,7 @@ const Scene: FC = () => {
     <Canvas>
       <ambientLight />
       <pointLight position={[0, 0, 1]} />
-      <Model />
+      <Model scale={2} />
       <OrbitControls />
     </Canvas>
   )
