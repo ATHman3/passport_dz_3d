@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 
 const Model: FC<GroupProps> = (props) => {
   // Remplacez le chemin par l'emplacement de votre fichier GLB
-  const { scene } = useGLTF('/cube.glb')
+  const { scene } = useGLTF('/passport.glb')
   
   return <primitive object={scene} {...props} />
 }
