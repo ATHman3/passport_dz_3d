@@ -7,8 +7,8 @@ import Model from './Model'
 const Scene: FC = () => {
   return (
     <Canvas>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} />
+      <ambientLight />
+      <pointLight position={[0, 0, 1]} />
       <Model />
       <OrbitControls />
     </Canvas>
