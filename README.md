@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Algerian Passport 3D Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Passport Demo](.github/preview.gif)
 
-Currently, two official plugins are available:
+## 📝 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+An interactive 3D visualization of the Algerian passport using React Three Fiber. This project uses a detailed GLB model of the Algerian passport, created in Blender, allowing users to explore and interact with the passport in their browser. The GLB format ensures high-quality 3D rendering while maintaining optimal file size and performance.
 
-## Expanding the ESLint configuration
+## Model Details
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Format: GLB (GL Binary)
+- Created with: Blender
+- Optimized for web performance
+- Includes detailed textures and materials of the Algerian passport
 
-- Configure the top-level `parserOptions` property like this:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- High-fidelity 3D model of the Algerian passport
+- 360-degree interactive rotation
+- Zoom and pan functionality for detailed examination
+- Smooth animations
+- Real-time rendering with Three.js
+
+## 🚀 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Three.js](https://threejs.org/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/)
+- [React Three Drei](https://github.com/pmndrs/drei)
+
+## 🛠️ Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/ATHman3/passport_dz_3d
+cd passport_dz_3d
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies
+```bash
+npm install
 ```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
