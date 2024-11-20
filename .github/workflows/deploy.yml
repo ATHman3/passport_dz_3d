@@ -42,6 +42,9 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Add custom CNAME
+        run: echo 'passport.athman3.com' > ./dist/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
